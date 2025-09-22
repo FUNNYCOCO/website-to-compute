@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ableton Style Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            padding-top: 70px; /* 补偿导航栏高度 */
+        }
+        
+        /* 合并导航栏容器 */
+        .navbar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .top_bar {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .mid_bar {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .top_bar img {
+            height: 24px;
+            margin-right: 15px;
+        }
+        
+        .top_bar p, .mid_bar p {
+            font-size: 12px;
+            margin: 0 8px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        
+        .top_bar p:hover, .mid_bar p:hover {
+            color: #36bfff;
+        }
+        
+        .content-section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .content1 {
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+        
+        .content1 img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .content2 {
+            background-color: #f0f0f0;
+            padding: 30px 0;
+        }
+        
+        .content2 img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .feature-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .feature-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature h3 {
+            font-size: 18px;
+            margin: 15px 0 10px;
+            color: #0000ff;
+        }
+        
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .icon {
+            font-size: 36px;
+            color: #0000ff;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .top_bar, .mid_bar {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 10px;
+            }
+            
+            .top_bar p, .mid_bar p {
+                margin: 5px 8px;
+                font-size: 11px;
+            }
+            
+            body {
+                padding-top: 100px; /* 补偿更高的导航栏 */
+            }
+            
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏容器 -->
+    <div class="navbar-container">
+        <div class="top_bar">
+            <img src="./public/img/ableton-hallmark.ef5355379032.svg" alt="Ableton Logo">
+            <p>Live</p>
+            <p>Push</p>
+            <p>Move</p>
+            <p>Note</p>
+            <p>Link</p>
+            <p>Shop</p>
+            <p>Pack</p>
+            <p>Help</p>
+            <p>More +</p>
+        </div>
+        
+        <div class="mid_bar">
+            <p>Live 12</p>
+            <p>All new features</p>
+            <p>What is Live?</p>
+            <p>Max for Live</p>
+            <p>Learn Live</p>
+            <p>Integrated hardware</p>
+            <p>Compare editions</p>
+            <p>Buy now</p>
+        </div>
+    </div>
+    
+    <!-- 内容区域 -->
+    <div class="content1">
+        <img src="./public/img/屏幕截图 2025-08-29 213100.png" alt="Ableton Live Interface">
+    </div>
+    
+    <div class="feature-section">
+        <h2>Why Choose Ableton Live 12?</h2>
+        <p>The most powerful music creation software with intuitive workflow and cutting-edge features</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="icon">🎹</div>
+                <h3>Advanced MIDI Tools</h3>
+                <p>Create complex melodies and rhythms with our enhanced MIDI editing capabilities.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="icon">🎚️</div>
+                <h3>Smart Mixing</h3>
+                <p>Intelligent audio processing that adapts to your mix for professional results.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="icon">🌐</div>
+                <h3>Cloud Collaboration</h3>
+                <p>Work with musicians worldwide in real-time on the same project.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content2">
+        <img src="./public/img/what-is-live12.jpg" alt="Ableton Live Features">
+    </div>
+    
+    <footer>
+        <p>© 2025 Ableton AG. All rights reserved.</p>
+        <p>Contact: support@ableton.com | Privacy Policy | Terms of Service</p>
+    </footer>
+</body>
+</html>
